@@ -1,6 +1,5 @@
 package com.miage.altea.tp.trainer_api.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +12,6 @@ import com.miage.altea.tp.trainer_api.service.TrainerService;
 @RequestMapping(value = "/trainers")
 public class TrainerController {
 
-	@Autowired
 	private final TrainerService trainerService;
 
 	TrainerController(TrainerService trainerService){
