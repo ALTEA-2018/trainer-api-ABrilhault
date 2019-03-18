@@ -1,5 +1,7 @@
 package com.miage.altea.tp.trainer_api;
 
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +15,7 @@ import com.miage.altea.tp.trainer_api.bo.Trainer;
 import com.miage.altea.tp.trainer_api.repository.TrainerRepository;
 
 @SpringBootApplication
+@EnableSwagger2
 public class TrainerApi {
 
 	public static void main(String... args){
